@@ -1,0 +1,122 @@
+ body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #a6b8d0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contenedor {
+      display: flex;
+      max-width: 1000px;
+      margin: 2rem auto;
+      background-color: #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .columna-izquierda {
+      background-color: #ecf0f4;
+      width: 35%;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .foto {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      color: #1f2a44;
+      font-size: 2rem;
+      margin: 1.5rem 0 0.5rem;
+    }
+ 
+    h2 {
+      background-color: #1f2a44;
+      color: white;
+      padding: 0.4rem 1rem;
+      display: inline-block;
+      border-radius: 20px;
+      font-size: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    h2:hover {
+      transform: scale(1.05);
+    }
+
+    .columna-derecha {
+      width: 65%;
+      padding: 2rem;
+    }
+
+    .seccion {
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #bce9cc;
+      padding-bottom: 1rem;
+    }
+
+    p {
+      margin: 0.5rem 0;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    strong {
+      font-weight: bold;
+      color: #1f2a44;
+    }
+
+    .boton {
+      display: inline-block;
+      padding: 12px 25px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: white;
+      background: linear-gradient(135deg, #6a8eff, #3e58c2);
+      border: none;
+      border-radius: 12px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.2s, background 0.3s;
+      margin-right: 1rem;
+      margin-top: 1rem;
+    }
+
+    .boton:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #5c7fe5, #354cb3);
+    }
+
+    @media (max-width: 768px) {
+      .contenedor {
+        flex-direction: column;
+      }
+
+      .columna-izquierda, .columna-derecha {
+        width: 100%;
+        padding: 1.5rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+
+      .boton {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0.5rem 0;
+      }
+    }
+  
