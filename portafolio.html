@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="!.html.css">
+ 
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Proyectos</h1>
+
+    <div class="materias">
+      <div class="materia" onclick="mostrarInfo('info1')">Introducción a la programación web</div>
+      <div class="materia" onclick="mostrarInfo('info2')">Producción Audiovisual</div>
+      <div class="materia" onclick="mostrarInfo('info3')">Interacción UI y UX</div>
+      <div class="materia" onclick="mostrarInfo('info4')">Diseño 3D</div>
+      <div class="materia" onclick="mostrarInfo('info5')">Identidad Gráfica</div>
+    </div>
+
+    <div id="info1" class="info">
+      <h2>Introducción a la programación web</h2>
+      <p>Realizamos una investigacion sobre como se puede usar html y cuales son las caracteristicas mas importantes de cada paso a seguir.</p>
+      <img src="https://i.postimg.cc/YSNzyvhZ/html.png" alt="Web">
+    </div>
+
+    <div id="info2" class="info">
+      <h2>Producción Audiovisual</h2>
+      <p>realizamos una actividad de fotografias donde debiamos jugar con la camara de nuestros celulares para que quedara un enfoque lindo y limpio .</p>
+      <img src="https://i.postimg.cc/KzJrxC75/iso.png" alt="Audiovisual">
+      <p>Realizamos una actividad done se hacia la vida y la biografuiab de un artista y se copiaban sus fotografias</p>
+       <img src="https://i.postimg.cc/prSfn86h/presentacion-persona.png" alt="Audiovisual">
+    </div>
+
+    <div id="info3" class="info">
+      <h2>Interacción UI y UX</h2>
+      <p>una pagina web con interaciones .</p>
+      <img src="https://i.postimg.cc/dtzRs2Cg/Captura-de-pantalla-2025-07-04-a-la-s-11-08-17-a-m.png" alt="UI UX">
+    </div>
+
+    <div id="info4" class="info">
+      <h2>Diseño 3D</h2>
+      <p>Una presentacion sobre un proyecto que estamos realizando de itagui.</p>
+      <img src="https://i.postimg.cc/j2BfjTDy/Captura-de-pantalla-2025-07-04-a-la-s-11-09-59-a-m.png" alt="Diseño 3D">
+    </div>
+
+    <div id="info5" class="info">
+      <h2>Identidad Gráfica</h2>
+      <p>Desarrollamos pixel art, proyecciones y metáforas visuales.</p>
+      <img src="https://i.postimg.cc/wj8J868p/capa.png" alt="Pixel Art">
+      <img src="https://i.postimg.cc/DybsMSN6/isometria.png" alt="Isometría">
+      <img src="https://i.postimg.cc/QdQ7jRhW/bARBIE.png" alt="Barbie">
+    </div>
+
+    <div style="text-align:center;">
+      <a href="https://codepen.io/Dahiana-Vargas/pen/zxGVLdL" class="boton">← Volver a la presentación</a>
+    </div>
+  </div>
+
+  <script>
+    function mostrarInfo(id) {
+      const secciones = document.querySelectorAll('.info');
+      secciones.forEach(section => section.style.display = 'none');
+      const actual = document.getElementById(id);
+      if (actual) actual.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
+
+  
+  </div>
+</body>
+</html>
